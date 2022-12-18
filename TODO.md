@@ -14,7 +14,7 @@ In a fictional world, we are branching into the music business and need a new a 
 
 **Make a page that displays the top 100:**
     - HTML: Basic page - EJS - display list of top 100 (think Q U ep list)
-    - JS: fetch data and pass to ejs list
+    - JS: fetch data and generate list nodes with info
     - CSS: Basic style, responsive, clean 
     - Comment everything
 

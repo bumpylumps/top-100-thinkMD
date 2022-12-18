@@ -19,7 +19,15 @@ function getAlbums(){
 
                 //create list nodes to store each album's data on
                 let album = document.createElement("li");
-                album.innerText = `${x["im:name"].label} - ${x["im:artist"].label}`;
+                
+                //pass album info to fresh list node - generate a span for name and artist
+                //in order to ease access for styling
+                album.innerHTML = '<span>' + `${x["im:name"].label}` + '</span>' + '<br>' + 
+                '<span>' + ` ${x["im:artist"].label}` + '</span>';
+
+                //add class to list node for styles
+                album.classList.add('album-info'); 
+
 
                 //add list node to album
                 document.querySelector('.album-list').append(album);

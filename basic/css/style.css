@@ -1,16 +1,33 @@
 
+/*base styles*/
+
+/*body*/
+body {
+    background-color: rgba(211, 211, 223, .7);
+}
+
+
 /*banner*/
+
+.banner {
+    width: 100%;
+    background: black;
+    height: 60px;
+}
 
 .banner h1{
     width: fit-content;
     margin: 2% auto;
+    margin-top: 0;
+    padding-top: 1%;
+    color: white;
 }
 
 
 /* album list */
 
 .album-container {
-    width: 40%;
+    width: 36%;
     height: 400px;
     margin: 5% auto;
     margin-top: 5%;
@@ -24,11 +41,22 @@
 }
 
 
-.album-list li {
-    width: fit-content;
-    margin: 1% 8%;
+.album-info {
+    border-bottom: 2px solid;
+    width: 91%;
+    padding: 3% 0;
+    padding-left: 3%;
+    padding-top: 1%;
+    margin: 2% 8%;
 }
 
+.album-info span {
+    font-weight: bold;
+}
+
+.album-info br+span {
+    font-weight: normal;
+}
 
 
 
