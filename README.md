@@ -7,7 +7,13 @@ Top 100 music charts tracker for ThinkMD
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, SASS, Angular, NestJS 
+**Tech used:** HTML, CSS, JavaScript, SASS, Angular, NestJS, EJS
+
+### Basic:
+### Novice: 
+### Intermediate: 
+### Expert: 
+### Bonus: 
 
 
 ## Optimizations
