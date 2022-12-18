@@ -9,7 +9,8 @@ In a fictional world, we are branching into the music business and need a new a 
 - Clean, readable, maintainable codebase 
 - Source code on Github 
 - Cross browser support (or graceful degradation) 
-- Responsive design and implementation A good user experience 
+- Responsive design and implementation 
+- A good user experience 
 
 **Make a page that displays the top 100:**
     - HTML: Basic page - EJS - display list of top 100 (think Q U ep list)
@@ -25,7 +26,8 @@ In a fictional world, we are branching into the music business and need a new a 
 ## **Novice "Hey! Look! Listen!"**
 *TASKS*
 
-- All of the base requirements Create and implement (using HTML, CSS and JS) a basic design 
+- All of the base requirements 
+- Create and implement (using HTML, CSS and JS) a basic design 
 - Use a CSS Framework (Bootstrap, Foundation, Pure, etc.…)
     - Bootstrap Basic page
         - basic nav
