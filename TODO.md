@@ -80,15 +80,14 @@ In a fictional world, we are branching into the music business and need a new a 
 - Display list with header
 
  -- HTML: Basic page - EJS - display list of top 100 (think Q U ep list)
-    - JS: fetch data and pass to ejs list
+    - JS: fetch data and pass to list in html
     - CSS: Basic style, responsive, clean 
     - Comment everything
 
 ### Novice :
 -  Bootstrap Basic page
-    - basic nav
-    - nice font
     - build off of basic 
+    - use list groups for album list
 
 ### Intermediate: 
 - Angular build based on basic page
