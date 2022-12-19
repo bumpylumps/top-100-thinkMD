@@ -33,13 +33,11 @@ function getAlbums(){
                 document.querySelector('ol').append(album);
 
             })
-
-            
         })
+         //grab errors
         .catch(err => {
             console.log(`error ${err}`)
         })
 }
 
 getAlbums();
-//feed.entry[0]["im:name"]
