@@ -19,6 +19,9 @@ body {
 
 .banner h1{
     width: fit-content;
+
+    /*prefix for firefox, fit-content not supported*/
+    max-width: -moz-max-content;
     margin: 2% auto;
     margin-top: 0;
     padding-top: 1%;
@@ -54,10 +57,12 @@ body {
     margin: 2% 8%;
 }
 
+/*set album titles to bold for easier readability*/
 .album-info span {
     font-weight: bold;
 }
 
+/*override bold for album artists */
 .album-info br+span {
     font-weight: normal;
 }
