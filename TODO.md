@@ -91,9 +91,11 @@ In a fictional world, we are branching into the music business and need a new a 
 
 ### Intermediate: 
 - Angular build based on basic page
-    -  nav component
-    -  list component
-    -  list items component for albums
+    - service for album fetch
+    - list component
+    - list items component for albums
+    - footer component
+    - header component
 
 - Build SASS based off of CSS from basic
 - Animations: 
