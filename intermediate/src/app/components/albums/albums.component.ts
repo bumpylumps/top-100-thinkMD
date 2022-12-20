@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AlbumsService } from '../../services/albums.service';
+import { Album } from '../../Album'
 
 @Component({
   selector: 'app-albums',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./albums.component.sass']
 })
 export class AlbumsComponent implements OnInit {
-  constructor() { }
+  albums!: Album;
+
+
+  constructor(private albumsService: AlbumsService) { }
 
   ngOnInit(): void {
-    console.log('Albums')
+    console.log(this.albumsService.getAlbums())
+    this.albumsService.getAlbums().subscribe((albums) => (this.albums = albums))
   }
 
 }

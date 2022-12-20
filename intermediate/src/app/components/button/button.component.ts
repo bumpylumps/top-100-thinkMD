@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.sass']
 })
-export class ButtonComponent {
+export class ButtonComponent implements OnInit{
+
+  constructor() {}
+
+  ngOnInit(): void {
+    
+  }
+
+  goToLink(url: string){
+    window.open(url, "_blank")
+  }
 
 }
