@@ -1,6 +1,10 @@
 <div class="album-list-container"> 
     <ol>
         <app-album-item
-                ></app-album-item>
+            *ngFor="let album of albumInfo"
+            [name]="album['name']"
+            [artist]="album['artist']"
+            [img]="album['img']"
+        ></app-album-item>
     </ol>
 </div>

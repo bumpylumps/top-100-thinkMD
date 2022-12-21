@@ -10,9 +10,15 @@ import { AlbumsService } from '../../services/albums.service';
 export class AlbumItemComponent implements OnInit{
  
   constructor(private albumsService: AlbumsService) {}
+  @Input() albums!: []
+  @Input() name!: string
+  @Input() artist!: string
+  @Input() img!: string  
+  
 
+   
+  
   ngOnInit(): void {
-    this.albumsService.getAlbums();
   }
 
 }

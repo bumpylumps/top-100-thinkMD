@@ -10,13 +10,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class AlbumsService {
   private apiUrl = 'https://itunes.apple.com/us/rss/topalbums/limit=100/json'
 
+
   constructor(private http: HttpClient ) { }
 
   getAlbums() {
-    return this.http
-                .get<any>(this.apiUrl)
-                .subscribe(albumInfo => {
-                  console.log(albumInfo);
-                });
+    return this.http.get<any>(this.apiUrl);
   }
 }
