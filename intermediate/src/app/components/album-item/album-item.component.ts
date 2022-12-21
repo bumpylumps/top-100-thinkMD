@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Album } from '../../Album';
+import { AlbumsService } from '../../services/albums.service';
 
 
 @Component({
@@ -8,12 +8,11 @@ import { Album } from '../../Album';
   styleUrls: ['./album-item.component.sass']
 })
 export class AlbumItemComponent implements OnInit{
-  @Input() albums!: Album;
-
-  constructor() {}
+ 
+  constructor(private albumsService: AlbumsService) {}
 
   ngOnInit(): void {
-    
+    this.albumsService.getAlbums();
   }
 
 }

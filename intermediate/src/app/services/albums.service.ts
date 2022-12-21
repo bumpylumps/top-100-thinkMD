@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { map } from 'rxjs/operators'
 
 
-import { Observable } from 'rxjs'
-import { Album } from '../Album'
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +12,11 @@ export class AlbumsService {
 
   constructor(private http: HttpClient ) { }
 
-  getAlbums(): Observable<Album> {
-    return this.http.get<Album>(this.apiUrl).pipe();
+  getAlbums() {
+    return this.http
+                .get<any>(this.apiUrl)
+                .subscribe(albumInfo => {
+                  console.log(albumInfo);
+                });
   }
 }
