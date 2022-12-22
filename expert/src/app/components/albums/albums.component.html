@@ -1,0 +1,17 @@
+<!--Album container passes data from Albums Service, 
+    generates an album-item component for each 
+    album with a for loop, and binds variables to 
+    each span in album-item components -->
+<div class="album-list-container"> 
+    <ol>
+        <!--Grab album item component, loop through imported albumInfo array,
+             and set values for generated album-item components -->
+        <app-album-item
+            *ngFor="let album of albumInfo"
+            [name]="album['name']"
+            [artist]="album['artist']"
+            [img]="album['img']"
+            class="album-item"
+        ></app-album-item>
+    </ol>
+</div>
