@@ -1,5 +1,4 @@
-<!--Instead of simply using an <a>, I liked the idea of using a button 
-    for more interactive styling-->
-<button
-    (click)="goToLink('https://github.com/bumpylumps/top-100-thinkMD/tree/main/intermediate')
-    ">Find me on Github</button>
+<!--button with ng-content to customize each instance of component-->
+<button>
+    <ng-content></ng-content>    
+</button>

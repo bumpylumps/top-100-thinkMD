@@ -11,9 +11,6 @@ import { Component } from '@angular/core';
 
 export class ButtonComponent {
 
-  //simple link function to redirect to project's repo on github
-  goToLink(url: string){
-    window.open(url, "_blank")
-  }
+
 
 }

@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AlbumItemComponent } from './components/album-item/album-item.component';
 import { AlbumPopupComponent } from './components/album-popup/album-popup.component';
+import { SearchboxComponent } from './components/searchbox/searchbox.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AlbumPopupComponent } from './components/album-popup/album-popup.compon
     FooterComponent,
     ButtonComponent,
     AlbumItemComponent,
-    AlbumPopupComponent
+    AlbumPopupComponent,
+    SearchboxComponent,
   ],
   imports: [
     BrowserModule,

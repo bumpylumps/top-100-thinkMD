@@ -11,4 +11,9 @@ import { Component } from '@angular/core';
 //no behaviors necessary (behavior handled in button component)
 export class FooterComponent{
 
+  //simple link function to redirect to project's repo on github
+  goToLink(url: string){
+    window.open(url, "_blank")
+  }
+
 }
