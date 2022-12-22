@@ -58,14 +58,16 @@ body {
 }
 
 /*set album titles to bold for easier readability*/
-.album-info span {
+.album-info > span {
     font-weight: bold;
 }
 
-/*override bold for album artists */
+/*
+/*override bold for album artists 
 .album-info br+span {
     font-weight: normal;
 }
+*/
 
 
 

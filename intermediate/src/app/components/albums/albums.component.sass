@@ -1,11 +1,14 @@
+/* style settings for albums container
+    
 .album-list-container
-    background-color: #F9E6B2
+    background-color: floralwhite
     width: 50%
     height: 330px
     margin: 5% auto
     padding: 5%
     margin-bottom: 3%
 
+    /*flex list made from albumInfo array into single row
     ol
         display: flex
         flex-direction: row
@@ -13,6 +16,7 @@
         overflow: auto
         min-height: 330px
 
+    /* set colors on album-item cards and animate
 .album-item
     margin: 2%
     max-height: 283px
@@ -23,11 +27,13 @@
 /* for loop for visible album cards 
 @for $i from 1 through 4
     .album-item
+        /*animate each card in a sequence
         &:nth-child(#{$i})
             animation-delay: $i * (.1s)
 
 /*controls for fade-in animation on album cards
 @keyframes rotate-in
+    /* controls for album card animation
     0%
         opacity: 0
         transform:  translateX(50%) scale(0) rotateZ(-60deg)

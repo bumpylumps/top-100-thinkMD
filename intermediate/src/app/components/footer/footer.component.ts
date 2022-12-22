@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+//import dependencies
+import { Component } from '@angular/core';
 
-
+//component settings
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.sass']
 })
-export class FooterComponent implements OnInit{
 
-  constructor() {}
-
-  ngOnInit(): void {
-    
-  }
+//no behaviors necessary (behavior handled in button component)
+export class FooterComponent{
 
 }

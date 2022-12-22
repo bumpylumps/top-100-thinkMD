@@ -15,13 +15,15 @@ function getAlbums(){
 
             //loop through entry array from json promise
             data.feed.entry.forEach(x => {
-                //console.log(x["im:name"].label);
+
 
                 //create list nodes to store each album's data on
                 let album = document.createElement("li");
                 
-                //pass album info to fresh list node - generate a span for name and artist
-                //in order to ease access for styling
+                /*
+                pass album info to fresh list node - generate a span for name and artist
+                in order to ease access for styling
+                */
                 album.innerHTML = '<span class="bold">' + `${x["im:name"].label}` + '</span>' + '<br>' + 
                 '<span>' + ` ${x["im:artist"].label}` + '</span>';
 
