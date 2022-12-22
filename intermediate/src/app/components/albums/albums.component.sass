@@ -17,3 +17,22 @@
     margin: 2%
     max-height: 283px
     background-color: antiquewhite
+    border-radius: 2%
+    animation: .5s ease-in-out both rotate-in
+
+/* for loop for visible album cards 
+@for $i from 1 through 4
+    .album-item
+        &:nth-child(#{$i})
+            animation-delay: $i * (.1s)
+
+/*controls for fade-in animation on album cards
+@keyframes rotate-in
+    0%
+        opacity: 0
+        transform:  translateX(50%) scale(0) rotateZ(-60deg)
+    
+
+    100%
+        opacity: 1
+        transform: translateX(0) scale(1) rotateZ(0deg)
