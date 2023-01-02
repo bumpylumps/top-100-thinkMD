@@ -1,4 +1,8 @@
 <section class="album-popup-container">
+    <app-button
+        [ngStyle]="{ 'color': 'red' }"
+        (click)="togglePopup()"
+            >X</app-button>
     <span>
         <img src= '{{ img }}'  alt="Album Art"/>
     </span>
@@ -7,5 +11,8 @@
     </span>
     <span class="album-item-artist">
         {{ artist }}
+    </span>
+    <span class="album-item-id">
+        {{ storeLink }}
     </span>
 </section>

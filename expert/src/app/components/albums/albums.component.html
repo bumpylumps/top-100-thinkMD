@@ -12,6 +12,11 @@
             [artist]="album['artist']"
             [img]="album['img']"
             class="album-item"
+            (click) = "formatPopup()"
         ></app-album-item>
     </ol>
 </div>
+<app-album-popup
+    *ngIf="showAlbumPopup">
+</app-album-popup>
+

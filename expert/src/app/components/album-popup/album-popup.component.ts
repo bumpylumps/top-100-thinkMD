@@ -1,6 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { Subscription } from 'rxjs';
+
+
 
 import { AlbumsService } from 'src/app/services/albums.service';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-album-popup',
@@ -10,12 +14,26 @@ import { AlbumsService } from 'src/app/services/albums.service';
 
 
 export class AlbumPopupComponent {
-  constructor(private albumsService: AlbumsService) {}
 
   @Input() name!: string
   @Input() artist!: string
   @Input() img!: string 
+  @Input() storeLink!: string
 
 
+  showAlbumPopup!: boolean;
+  subscription!: Subscription;
+
+
+  constructor(private albumsService: AlbumsService, private uiService: UiService) {
+    this.subscription = this.uiService
+      .onToggle()
+      .subscribe((value)=> (this.showAlbumPopup = value))
+  }
+
+ 
+  togglePopup(){
+    this.uiService.toggleAlbumPopup();
+  }
 
 }

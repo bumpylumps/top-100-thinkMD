@@ -1,6 +1,11 @@
 //Import Dependencies
 import { Component, Input } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { AlbumsService } from '../../services/albums.service';
+import { UiService } from 'src/app/services/ui.service';
+
+import { AlbumPopupComponent } from '../album-popup/album-popup.component';
+
 
 //Component settings
 @Component({
@@ -12,8 +17,8 @@ import { AlbumsService } from '../../services/albums.service';
 //Use OnInit to grab album info on page load
 export class AlbumItemComponent{
  
-  //Import Albums Service for access to album info from apiUrl
-  constructor(private albumsService: AlbumsService) {}
+
+ 
  
   /*
   Declare variables to be imported from albums container component
@@ -22,5 +27,16 @@ export class AlbumItemComponent{
   @Input() name!: string
   @Input() artist!: string
   @Input() img!: string  
+
+  showAlbumPopup!: boolean;
+  subscription!: Subscription;
+
+  //Import Albums Service for access to album info from apiUrl
+  constructor(private albumsService: AlbumsService, private uiService: UiService) {
+   this.subscription = this.uiService
+     .onToggle()
+     .subscribe((value)=> (this.showAlbumPopup = value))
+}
+
 
 }
