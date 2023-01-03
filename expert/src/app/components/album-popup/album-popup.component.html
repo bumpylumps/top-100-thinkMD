@@ -6,7 +6,7 @@
     <span>
         <img src= '{{ img }}'  alt="Album Art"/>
     </span>
-    <span class="album-item-name">
+    <span class="album-item-name" *ngIf='name'>
         {{ name }}
     </span>
     <span class="album-item-artist">

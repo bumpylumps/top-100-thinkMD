@@ -1,7 +1,7 @@
 <section class="search-box">
     <span>Quick Search:</span> 
     <span>
-        <input />
+        <input [(ngModel)]="text" type="text" name="text" id="text" />
         <app-button
             (click) = "search()"
             >Search</app-button>

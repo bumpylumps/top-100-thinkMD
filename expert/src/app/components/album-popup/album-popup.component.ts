@@ -6,6 +6,8 @@ import { Subscription } from 'rxjs';
 import { AlbumsService } from 'src/app/services/albums.service';
 import { UiService } from 'src/app/services/ui.service';
 
+import { SearchboxComponent } from '../searchbox/searchbox.component';
+
 @Component({
   selector: 'app-album-popup',
   templateUrl: './album-popup.component.html',
@@ -23,6 +25,7 @@ export class AlbumPopupComponent {
 
   showAlbumPopup!: boolean;
   subscription!: Subscription;
+  searchBox!: SearchboxComponent;
 
 
   constructor(private albumsService: AlbumsService, private uiService: UiService) {
@@ -32,8 +35,12 @@ export class AlbumPopupComponent {
   }
 
  
+ 
+
   togglePopup(){
     this.uiService.toggleAlbumPopup();
   }
+
+
 
 }

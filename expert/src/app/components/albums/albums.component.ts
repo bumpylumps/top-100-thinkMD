@@ -1,12 +1,13 @@
 //Import dependencies
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { AlbumPopupComponent } from '../album-popup/album-popup.component';
+
 
 
 
 import { AlbumsService } from '../../services/albums.service';
 import { UiService } from 'src/app/services/ui.service';
+
 
 
 
@@ -19,7 +20,6 @@ import { UiService } from 'src/app/services/ui.service';
 
 //use OnInit to animate on load
 export class AlbumsComponent implements OnInit {
-  
   
   showAlbumPopup!: boolean;
   subscription!: Subscription;
@@ -58,6 +58,9 @@ constructor(private albumsService: AlbumsService, private uiService: UiService) 
   formatPopup(){
     this.uiService.toggleAlbumPopup();
  }
+
+
+
 
 }
 
