@@ -1,0 +1,82 @@
+/*Basic page layout with vanilla CSS*/
+
+/*base styles*/
+
+/*body*/
+body {
+    background-color: rgba(211, 211, 223, .7);
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/*banner*/
+
+.banner {
+    width: 100%;
+    background: black;
+    height: 60px;
+}
+
+.banner h1{
+    width: fit-content;
+
+    /*prefix for firefox, fit-content not supported*/
+    max-width: -moz-max-content;
+    margin: 2% auto;
+    margin-top: 0;
+    padding-top: 1%;
+    color: white;
+}
+
+
+/* album list */
+
+.album-container {
+    width: 40%;
+    height: 350px;
+    margin: 3% auto;
+    margin-top: 5%;
+    padding: 3%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: floralwhite;
+}
+
+
+.album-list {
+    list-style-type: decimal; 
+}
+
+
+.album-info {
+    border-bottom: 2px solid;
+    width: 91%;
+    padding: 3% 0;
+    padding-left: 3%;
+    padding-top: 1%;
+    margin: 2% 8%;
+}
+
+/*set album titles to bold for easier readability*/
+.album-info > span {
+    font-weight: bold;
+}
+
+/*
+/*override bold for album artists 
+.album-info br+span {
+    font-weight: normal;
+}
+*/
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    text-align: right;
+}
+
+footer a{
+    margin-right: 5%;
+}
