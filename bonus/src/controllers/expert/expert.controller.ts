@@ -1,4 +1,9 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get, Render } from '@nestjs/common';
 
 @Controller('expert')
-export class ExpertController {}
+export class ExpertController {
+
+    @Get()
+    @Render('')
+    root(){}
+}
