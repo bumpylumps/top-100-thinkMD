@@ -22,19 +22,27 @@ Following the prompt given to me by ThinkMD, I decided to block out different ti
 
 
 
+### Tech used:
+  HTML, CSS, JavaScript, SASS, Angular, NestJS, EJS
 
+**Basic:** 
+  HTML, JS, CSS
 
-**Tech used:** HTML, CSS, JavaScript, SASS, Angular, NestJS, EJS
+**Novice:** 
+  HTML, JS, CSS, Bootstrap
 
-### Basic: HTML, JS, CSS
-### Novice: HTML, JS, CSS, Bootstrap
-### Intermediate: HTML, Angular, Sass, Typescript
-### Expert: HTML, Angular, Sass, Typescript
-### Bonus: NestJS, HTML, JS, CSS
+**Intermediate:** 
+  HTML, Angular, Sass, Typescript
+
+**Expert:** 
+  HTML, Angular, Sass, Typescript
+
+**Bonus:** 
+  NestJS, HTML, JS, CSS
 
 
 ## Optimizations: 
-
+If I gave myself more time on this project, I would definitely commit to finishing up the Expert page and build a full stack app that serves every project page as the Bonus. I would have the search results on the expert page load into a seperate section, either below the album container or next to the search box itself. I would also update the click events for the album items to display their full info as an expansion of the item that is already displayed, since pop ups are generally annoying to users. There's also room for a better layout on each version of the pages, so I would incorporate a nice template or find a designer to collaborate with and build something more user friendly. Finally, alot of the code could probably be optimized, espeically the pages using Angular. Getting more familiar with Angular would allow me to create something that is more production ready. 
 
 
 ## Lessons Learned:
