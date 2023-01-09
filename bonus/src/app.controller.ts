@@ -8,6 +8,14 @@ export class AppController {
 
   @Get()
   @Render('home')
-  root(){ }
+  root(){ 
+    return {
+      title: 'Chartwatch Home',
+      basicLink: 'Basic',
+      basicImageSrc: 'images/basic.JPG',
+      noviceLink: 'Novice',
+      noviceImageSrc: 'images/novice.JPG'
+      }
+   }
  
 }
