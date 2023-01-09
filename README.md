@@ -1,5 +1,5 @@
 # ChartWatch
-This application is a Top 100 music charts tracker for ThinkMD. It consumes data imported from the Itunes top 100 RSS feed. Each project displays information about the top 100 selling albums on Itunes, with attempts on all difficulty levels stated by ThinkMD's interview prompt. This project is a group of front end applications (features for Basic-Expert difficulties in respective directories) and a full-stack application (in the Bonus directory). 
+This application is a Top 100 music charts tracker built for ThinkMD's technical take home challenge. It consumes data imported from the Itunes top 100 RSS feed. Each project displays information about the top 100 selling albums on Itunes, with attempts on all difficulty levels stated by ThinkMD's interview prompt. This project is a group of front end applications (features for Basic-Expert difficulties in respective directories) and a full-stack application (in the Bonus directory). 
 
 ![alt tag](http://placecorgi.com/1200/650)
 
