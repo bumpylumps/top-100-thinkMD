@@ -1,7 +1,7 @@
 # ChartWatch
 This application is a Top 100 music charts tracker built for ThinkMD's technical take home challenge. It consumes data imported from the Itunes top 100 RSS feed. Each project displays information about the top 100 selling albums on Itunes, with attempts on all difficulty levels stated by ThinkMD's interview prompt. This project is a group of front end applications (features for Basic-Expert difficulties in respective directories) and a full-stack application (in the Bonus directory). 
 
-![alt tag](http://placecorgi.com/1200/650)
+![Bonus landing page](https://res.cloudinary.com/bumpsites/image/upload/v1673301907/homePic_m1d9is.jpg)
 
 ## How It's Made:
 Following the prompt given to me by ThinkMD, I decided to block out different timelines for the difficulty options I knew I could do (from basic to intermediate) and the options that I knew I would need to learn more about in order to be successful. Since I received this right before the holidays started, I took the holiday break (about 1 week) and split up the time between what I knew I could do, and what I knew I would need to learn in order to do, on each sides of that week. 
