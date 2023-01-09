@@ -50,11 +50,11 @@ In a fictional world, we are branching into the music business and need a new a 
 
 - All of the base, novice, and intermediate requirements 
 - Allow the top 100 to be searchable 
-    - client side JS 
+    - searchbox component
 - Allow the user to see more information about a selected Album 
-    - album link -> album tracks 
+    - album link -> album tracks, store link, etc 
 - Host the website on the service of your choice (We enjoy cloud hosting like Azure or AWS, but we would also settle for a *.github.io address)
-    - Cyclic hosting free
+    - github pages 
 
 ## **Bonus Round "All is fair in love and bonus rounds"**
 *TASKS*
@@ -62,43 +62,14 @@ In a fictional world, we are branching into the music business and need a new a 
 - Use a language that compiles to JavaScript (TypeScript, CoffeeScript, Dart, etc...) 
     - TS/ Nest backend
 - Surprise us! Add a feature that you think would work well here (for instance, advanced search, integration with other API, a "Favorite" functionality) 
-    - full site framework: landing page of basic w/links to 
+    - full site framework: landing page of basic w/links to basic, novice pages
 - Show us your work through your commit history!
     - repo available [here](https://github.com/bumpylumps/top-100-thinkMD)
 
 
 
 ---
-### Landing (Bonus): 
-- init nest
-- view - landing page -> basic view
 
 
-### Basic : 
-- HTML, CSS, JS ->  basic nav
 
-- Display list with header
 
- -- HTML: Basic page - EJS - display list of top 100 (think Q U ep list)
-    - JS: fetch data and pass to list in html
-    - CSS: Basic style, responsive, clean 
-    - Comment everything
-
-### Novice :
--  Bootstrap Basic page
-    - build off of basic 
-    - use list groups for album list
-
-### Intermediate: 
-- Angular build based on basic page
-    - service for album fetch
-    - list component
-    - list items component for albums
-    - footer component
-    - header component
-
-- Build SASS based off of CSS from basic
-- Animations: 
-    - fade in list
-    - color change on hover for links
-    - pop up fade in for album click

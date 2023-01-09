@@ -9,7 +9,6 @@ import { AlbumsService } from '../../services/albums.service';
   styleUrls: ['./album-item.component.sass']
 })
 
-//Use OnInit to grab album info on page load
 export class AlbumItemComponent{
  
   //Import Albums Service for access to album info from apiUrl

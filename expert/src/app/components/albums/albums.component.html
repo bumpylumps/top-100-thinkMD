@@ -5,7 +5,7 @@
 <div class="album-list-container"> 
     <ol>
         <!--Grab album item component, loop through imported albumInfo array,
-             and set values for generated album-item components -->
+             and set values for generated album-item components, add event listener for popup clicks -->
         <app-album-item
             *ngFor="let album of albumInfo"
             [name]="album['name']"
@@ -16,6 +16,7 @@
         ></app-album-item>
     </ol>
 </div>
+<!--import popup if showAlbumPopup is true-->
 <app-album-popup
     *ngIf="showAlbumPopup">
 </app-album-popup>

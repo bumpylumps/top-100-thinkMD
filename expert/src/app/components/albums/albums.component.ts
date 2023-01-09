@@ -55,6 +55,7 @@ constructor(private albumsService: AlbumsService, private uiService: UiService) 
     });
   }
   
+  //could not get formatting to work
   formatPopup(){
     this.uiService.toggleAlbumPopup();
  }

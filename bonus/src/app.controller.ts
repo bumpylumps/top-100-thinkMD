@@ -6,9 +6,12 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  //listen for home requests
   @Get()
+  //render Home page from views dir
   @Render('home')
   root(){ 
+    //pass details for EJS element templates
     return {
       title: 'Chartwatch Home',
       basicLink: 'Basic',

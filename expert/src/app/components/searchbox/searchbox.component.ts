@@ -34,20 +34,23 @@ export class SearchboxComponent {
       //generate new array with relevant album info
       this.albumInfo = albums.feed.entry.map((album:any, i:any) => ({
   
-        //use variables to store relevant info to pass to album-item and album-popup components 
+        //isolate data for search use
         name: album["im:name"].label,
         artist: album["im:artist"].label,
         img: album["im:image"][2].label,
         storeLink: album["id"].label
         }))
-        
+      
+        // gather input data from searchbox
       this.found = this.albumInfo.find(album => album["name"] === this.text);
-
+        // if it exists, bring up the popup, console log matching object
       if(this.found){
         this.uiService.toggleAlbumPopup();
         console.log(this.found);
+        //could not pass data to popup
         this.popUp.name = this.found.name;
       } else {
+        //if not log not found
         console.log("Not found")
       }
         
